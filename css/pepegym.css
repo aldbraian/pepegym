@@ -1,0 +1,259 @@
+body {
+  font-family: "allerta", sans-serif;
+  margin: 0;
+}
+.background{
+  background: linear-gradient(to right, #04B404, #088A08);
+  height: 500px;
+  padding: 20px;
+  color: white;
+}
+.pepegym{
+  font-weight: 900;
+  font-size: 45px;
+  position: relative;
+  right: 40px;
+  bottom: 20px;
+  color: #af6545;
+  text-shadow: 2px 4px 10px #0b3b0b, 2px 4px 10px #0b3b0b;
+}
+.logotipo{
+  display: inline-block;
+  margin: 0;
+  animation-name: animacion;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+}
+.menu{
+  display: inline-block;
+  position: absolute;
+  bottom: 20px;
+  right: 0;
+}
+.menu a{
+  text-decoration: none;
+  font-size: 24px;
+  color: white;
+  padding-left: 15px;
+}
+.menu a:hover{
+  color: #4c2f23;
+}
+.contenedor{
+  width: 800px;
+  margin: auto;
+  position: relative;
+}
+#titulo{
+  font-size: 70px;
+  margin-bottom: 0;
+}
+h3{
+  font-size: 23px;
+}
+.padding{
+  padding-left: 80px;
+}
+#eslogan{
+  margin-top: 0;
+}
+.button{
+  background: linear-gradient(to right, #01DF01,#0B3B0B);
+  background-size: auto;
+  font-size: 20px;
+  padding: 7px 12px;
+  border: none;
+  border-radius: 12px;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  box-shadow: 11px 11px 12px black;
+}
+.button:hover{
+  background: linear-gradient(to right, #0B3B0B,#01DF01);
+}
+h2{
+  font-size: 35px;
+}
+#planes h3{
+  font-size: 50px;
+}
+#planes{
+  color: #015401
+}
+.plan{
+  border: 2px solid #088a08;
+  border-radius: 15px;
+  padding: 10px;
+  margin-bottom: 35px;
+  box-shadow: 11px 11px 12px #1b1d1b;
+}
+.derecha{
+  float: right;
+  right: 0;
+  position: relative;
+}
+.izquierda{
+  float: left;
+  left: 0;
+  position: relative;
+}
+#plan1{
+  width: 200px;
+  bottom: 50px;
+  right: 60px;
+}
+#plan2{
+  width: 160px;
+  left: 50px;
+  bottom: 55px;
+}
+#plan3{
+  width: 306px;
+  bottom: 40px;
+}
+#plan4{
+  width: 400px;
+  bottom: 45px;
+  height: 300px;
+  left: -20px;
+}
+#title-a{
+  margin-bottom: 20px;
+}
+.contenedor-plan-a{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 10%;
+  bottom: 10px;
+}
+.contenedor-plan-b{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 15%;
+  bottom: 10px;
+}
+.contenedor-plan-c{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 400px;
+    left: 20px;
+    bottom: 17px;
+}
+.contenedor-plan-d{
+  display: flex;
+  flex-direction: column;
+}
+#footer{
+  background: linear-gradient(to right, #04B404, #088A08);
+}
+#footer .contenedor{
+  display: flex;
+  justify-content: space-between;
+}
+.contacto{
+  display: flex;
+  width: 340px;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+.contacto a{
+  color: white;
+  text-decoration: none;
+  margin: 10px 10px 10px 0px;
+}
+.contacto strong{
+  display: block;
+}
+.formulario{
+  display: flex;
+  width: 400px;
+  color: white;
+  padding: 50px 10px;
+}
+.col1{
+  margin-right: 15px;
+}
+#footer img{
+   position: relative;
+   right: 40px;
+}
+#titulo-footer{
+  font-size: 29px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  right: 50px;
+}
+.intereses{
+  font-size: 12px;
+}
+.formulario label, .sexo, .intereses{
+  margin-bottom: 10px;
+}
+.col1, .col2{
+  display: flex;
+  flex-direction: column;
+}
+.col2{
+  align-items: flex-start;
+}
+.menu a:before{
+  content:"∘";
+  font-size: 30px;
+  line-height: 20px;
+  color: white;
+}
+.background-precios{
+    background: linear-gradient(to right, #04B404, #088A08);
+    padding: 20px;
+    color: white;
+}
+.tabla{
+  margin: 30px;
+}
+table{
+  border: 1px solid #68984c;
+  border-collapse: collapse;
+  width: 100%;
+  box-shadow: 14px 14px 12px black;
+}
+th{
+  background: #68984c;
+  color: white;
+  text-align: left;
+  padding: 10px 20px;
+}
+td{
+  border: 1px solid #68984c;
+  padding: 20px;
+}
+.logotipo:hover{
+  transform: rotate(360deg);
+  transition-duration: 1s;
+}
+#pepe{
+  text-decoration: underline;
+  animation-name: subrayado;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes subrayado {
+    from {color: white;}
+    to {color: black;}
+  }
+@keyframes animacion{
+  from{}
+  to {transform: rotate(360deg);
+  transition-duration: 1s;}
+}
+textarea{
+  resize: none;
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Allerta" rel="stylesheet">
+    <title>Precios de tus mejores guitarras!!</title>
+    <link rel="stylesheet" href="css/pepegym.css">
+  </head>
+  <body>
+    <div class="background-precios">
+      <header class="header contenedor"> <!-- header -->
+        <figure class="logotipo"> <!-- logotipo -->
+          <img src="images/logo.png" width="200px" alt="PepeGym logotipo"/>
+        </figure>
+        <span class="pepegym">PepeGym</span>
+        <nav class="menu">      <!-- menu -->
+          <a href="index.html">Home   </a>
+          <a href="index.html#planes">Planes   </a>
+          <a href="precios.html">Precios   </a>
+        </nav>
+      </header>
+    </div>
+    <section class="tabla">
+      <div class="contenedor">
+        <table>
+        <thead>
+          <tr>
+            <th>Plan</th>
+            <th>Precio</th>
+            <th>Descripción</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Pepe Inicial</td>
+            <td>$35</td>
+            <td>Ideal para principiantes</td>
+          </tr>
+          <tr>
+            <td>Pepe Intermedio</td>
+            <td>$75</td>
+            <td>Ideal para cambios rapidos</td>
+          </tr>
+          <tr>
+            <td>Pepe Avanzado</td>
+            <td>$190</td>
+            <td>Ideal para tonificarse completamente</td>
+          </tr>
+          <tr>
+            <td>Pepe Avanzado</td>
+            <td>$300</td>
+            <td>Ideal para ser como la roca</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+    </section>
+      <footer id="footer">
+        <div class="contenedor">
+          <div class="contacto">
+            <img src="images/logo.png" width="200px" height="109px" alt="logotipo">
+            <span id="titulo-footer">PepeGym</span>
+            <a href="tel:+541169306133"><strong>Telefono</strong><span>1169306133</span></a>
+            <a href="mailto:contacto@pepegym.com"><strong>E-mail</strong><span>contacto@pepegym.com</span></a>
+          </div>
+          <form class="formulario">
+            <div class="col1">
+                <label for="nombre">Nombre</label>
+                <input type="text" required id="nombre" name="nombre"/>
+                <label for="email">Email</label>
+                <input type="email"/ required id="email" name="email">
+                <div class="sexo">
+                  <label>
+                    <input type="radio"/ id="mujer" checked name="sexo" value="mujer"> Mujer
+                  </label>
+                  <label>
+                    <input type="radio"/ id="hombre" name="sexo" value="hombre"> Hombre
+                  </label>
+                </div>
+                <div class="intereses">
+                  <label>
+                    <input type="checkbox"  checked id="cotizacion" name="intereses" value="cotizacion">Cotización
+                  </label>
+                  <label>
+                    <input type="checkbox" id="reclamos" name="intereses" value="reclamos">Reclamos
+                  </label>
+                  <label>
+                    <input type="checkbox" id="comentarios" name="intereses" value="comentarios">Comentarios
+                  </label>
+                  <label>
+                    <input type="checkbox" id="otros" name="intereses" value="otros">Otros
+                  </label>
+                </div>
+            </div>
+            <div class="col2">
+              <label for="comentarios">Comentarios</label>
+              <textarea name="comentarios" id="comentarios" cols="30" rows="7"></textarea>
+              <input type="submit" value="Enviar" class="button"/>
+            </div>
+          </form>
+        </div>
+      </footer>
+    </section>
+  </body>
+  </html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Allerta" rel="stylesheet">
+    <title>PepeGym - Sea solo feo</title>
+    <link rel="stylesheet" href="css/pepegym.css">
+  </head>
+  <body>
+    <div class="background">
+      <header class="header contenedor"> <!-- header -->
+        <figure class="logotipo"> <!-- logotipo -->
+          <img src="images/logo.png" width="200px" alt="PepeGym logotipo"/>
+        </figure>
+        <span class="pepegym">PepeGym</span>
+        <nav class="menu">      <!-- menu -->
+          <a href="index.html">Home   </a>
+          <a href="#planes">Planes   </a>
+          <a href="precios.html">Precios   </a>
+        </nav>
+      </header>
+      <section class="portada">
+        <div class="contenedor padding">
+          <h1 id="titulo">Gimnasio <span id="pepe">Pepe</span></h1>
+          <h3 id="eslogan">Tu objetivo, nuestro compromiso</h3>
+          <a href="#planes" class="button">Conoce más</a>
+        </div>
+      </section>
+    </div>
+    <section id="planes" class="contenedor">
+      <h2>Nuestros Planes</h2>
+      <article id="plan-a" class="plan der">
+        <img src="images/plan1.png"/ id="plan1" class="derecha">
+        <div class="contenedor-plan-a">
+          <h3 id="title-a">Pepe Inicial</h3>
+          <ol>
+            <li>Ideal para principiantes</li>
+            <li>Para cualquier tipo de persona</li>
+            <li>Rutinas desde el primer dia</p>
+          </ol>
+        </div>
+      </article>
+      <article id="plan-b" class="plan izq">
+        <img src="images/plan2.png"/ id="plan2" class="izquierda">
+        <div class="contenedor-plan-b">
+          <h3 id="title-a">Pepe Intermedio</h3>
+          <ol>
+            <li>Rutinas Aceleradas</li>
+            <li>Plan de nutrición</li>
+            <li>Cambios notables desde el 1mer mes</p>
+          </ol>
+        </div>
+      </article>
+      <article id="plan-c" class="plan der">
+        <img src="images/plan3.png"/ id="plan3" class="derecha">
+        <div class="contenedor-plan-c">
+          <h3 id="title-a">Pepe Avanzado</h3>
+          <ol>
+            <li>Suplementos gratis cada mes</li>
+            <li>Combo nutricional cada semana</li>
+            <li>Seguimiento continuo</p>
+          </ol>
+        </div>
+      </article>
+      <article id="plan-d" class="plan izq">
+        <img src="images/plan4.png" id="plan4" class="izquierda"/>
+        <div class="contenedor-plan-d">
+          <h3 id="title-a">Pepe Supremo</h3>
+          <ol>
+            <li>Bebidas y Snaks gratis</li>
+            <li>Entrenador personal</li>
+            <li>Exclusividad en el establecimiento</p>
+          </ol>
+        </div>
+      </article>
+    </section>
+      <footer id="footer">
+        <div class="contenedor">
+          <div class="contacto">
+            <img src="images/logo.png" width="200px" height="109px" alt="logotipo">
+            <span id="titulo-footer">PepeGym</span>
+            <a href="tel:+541169306133"><strong>Telefono</strong><span>1169306133</span></a>
+            <a href="mailto:contacto@pepegym.com"><strong>E-mail</strong><span>contacto@pepegym.com</span></a>
+          </div>
+          <form class="formulario">
+            <div class="col1">
+                <label for="nombre">Nombre</label>
+                <input type="text" required id="nombre" name="nombre"/>
+                <label for="email">Email</label>
+                <input type="email"/ required id="email" name="email">
+                <div class="sexo">
+                  <label>
+                    <input type="radio"/ id="mujer" checked name="sexo" value="mujer"> Mujer
+                  </label>
+                  <label>
+                    <input type="radio"/ id="hombre" name="sexo" value="hombre"> Hombre
+                  </label>
+                </div>
+                <div class="intereses">
+                  <label>
+                    <input type="checkbox"  checked id="cotizacion" name="intereses" value="cotizacion">Cotización
+                  </label>
+                  <label>
+                    <input type="checkbox" id="reclamos" name="intereses" value="reclamos">Reclamos
+                  </label>
+                  <label>
+                    <input type="checkbox" id="comentarios" name="intereses" value="comentarios">Comentarios
+                  </label>
+                  <label>
+                    <input type="checkbox" id="otros" name="intereses" value="otros">Otros
+                  </label>
+                </div>
+            </div>
+            <div class="col2">
+              <label for="comentarios">Comentarios</label>
+              <textarea name="comentarios" id="comentarios" cols="30" rows="7"></textarea>
+              <input type="submit" value="Enviar" class="button" style="margin-top:3px"/>
+            </div>
+          </form>
+        </div>
+      </footer>
+    </section>
+  </body>
+</html>
