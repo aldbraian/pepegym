@@ -2,9 +2,12 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="theme-color" content="#01d801"/>
+    <link href="fuentes/style.css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Allerta" rel="stylesheet">
     <title>Precios de tus mejores guitarras!!</title>
     <link rel="stylesheet" href="css/pepegym.css">
+    <meta name="viewport" content="width=device-width, initial-scale= 1, user-scalable= no">
   </head>
   <body>
     <div class="background-precios">
@@ -13,7 +16,8 @@
           <img src="images/logo.png" width="200px" alt="PepeGym logotipo"/>
         </figure>
         <span class="pepegym">PepeGym</span>
-        <nav class="menu">      <!-- menu -->
+        <span class="icon-menu" id="buttonone"></span>
+        <nav class="menu" id="menu">      <!-- menu -->
           <a href="index.html">Home   </a>
           <a href="index.html#planes">Planes   </a>
           <a href="precios.html">Precios   </a>
@@ -101,5 +105,25 @@
         </div>
       </footer>
     </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js">
+    </script>
+    <script type="text/javascript">
+      var $burgerButton = document.getElementById('buttonone');
+      var $menu = document.getElementById('menu');
+      $burgerButton.addEventListener("touchstart", toggleMenu)
+      function toggleMenu(){
+        $menu.classList.toggle("active");
+      };
+      function showMenu(){
+        $menu.classList.add("active");
+      };
+      function hideMenu(){
+        $menu.classList.remove("active");
+      };
+      var $body = document.body;
+      var hammertime = new Hammer($body);
+      hammertime.on('swipeleft', hideMenu);
+      hammertime.on('swiperight', showMenu);
+    </script>
   </body>
   </html>

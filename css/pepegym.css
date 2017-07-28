@@ -40,7 +40,7 @@ body {
   color: #4c2f23;
 }
 .contenedor{
-  width: 800px;
+  max-width: 800px;
   margin: auto;
   position: relative;
 }
@@ -146,6 +146,21 @@ h2{
 .contenedor-plan-d{
   display: flex;
   flex-direction: column;
+}
+.icon-menu{
+  width: 40px;
+  height: 40px;
+  line-height: 40px !important;
+  border-radius: 50%;
+  color: white;
+  background: #02d602;
+  text-align: center;
+  position: fixed;
+  left: 20px;
+  top: 20px;
+  z-index: 3;
+  display: none;
+  cursor: pointer;
 }
 #footer{
   background: linear-gradient(to right, #04B404, #088A08);
@@ -256,4 +271,279 @@ td{
 }
 textarea{
   resize: none;
+}
+@media screen and (min-height: 900px){
+  td{
+    font-size: 20px
+  }
+  .background-precios{
+    padding: 5% 30px;
+  }
+  #footer{
+    padding: 2% 0;
+  }
+}
+
+@media screen and (max-width: 800px){
+	.background-precios{
+		padding: 10% 20px;
+	}
+  .tabla{
+    margin: 7% 30px;
+  }
+/* HEADER-PORTADA */
+.logotipo{
+  position: relative;
+  right:3em;
+}
+.pepegym{
+  right: 2em;
+}
+.padding{
+  padding-left: 0;
+  padding-bottom: 45px;
+}
+.background{
+  height: auto;
+}
+#titulo{
+  margin-top: 30px;
+  font-size: 50px;
+}
+#h3{
+  font-size: 20px;
+}
+h2{
+  text-align: center;
+}
+.plan{
+  margin-right: 15px;
+  margin-left: 15px;
+}
+#plan1{
+  bottom: 39px;
+}
+#plan2{
+  bottom: 35px;
+}
+#plan3{
+  width: 297px;
+  bottom: 19px;
+}
+#plan4{
+  width: 337px;
+  bottom: 25px;
+}
+#footer .contenedor{
+  display: inline-flex;
+}
+.col1{
+  margin-right: 3px;
+}
+.formulario{
+  padding: 50px 0;
+}
+#title-a{
+  margin-bottom: 40px;
+}
+}
+@media screen and (max-width: 767px){
+  .formulario{
+    margin: 0 auto;
+    padding: 0;
+    width: 300px;
+    display: block;
+  }
+  #footer .contenedor{
+    display: block;
+  }
+  .contacto{
+    margin: 0 auto;
+  }
+  .intereses label{
+    display: block;
+    font-size: 16px;
+  }
+  input[type="text"],
+  input[type="email"]{
+    font-size: 16px;
+    padding: 5px;
+  }
+  textarea{
+    width: 100%
+  }
+  .col1{
+    margin: 0;
+  }
+  input[type="radio"],
+  input[type="checkbox"]{
+    transform: scale(1.5);
+  }
+}
+@media screen and (max-width: 650px){
+  .background{
+    text-align: center;
+  }
+  .logotipo{
+    position: static;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .pepegym{
+    right: 0;
+    display: flex;
+    justify-content: center;
+  }
+  .menu{
+    position: static;
+    display: flex;
+    justify-content: center;
+  }
+  .contenedor{
+    display: block;
+  }
+  #planes{
+    text-align: center;
+  }
+  #planes ol{
+    list-style: none;
+    padding: 0;
+  }
+  .derecha, .izquierda{
+    float: none;
+    position: static;
+  }
+  .responsive{
+    display: block;
+    position: static;
+  }
+  .contenedor-plan-c{
+    width: inherit;
+  }
+  #title-a{
+    margin: 0;
+  }
+}
+@media screen and (max-width: 500px){
+  .icon-menu{
+    display: inline-block;
+  }
+  .menu a:before{
+    display: none;
+  }
+  .menu a{
+    display: block;
+    border-bottom: 1px solid white;
+    padding: 8px 0;
+  }
+  .menu a:first-child{
+    border-top: 1px solid white;
+  }
+  .menu.active{
+    left: 0;
+  }
+  #plan4{
+    width: 270px;
+    height: 250px;
+  }
+  #plan3{
+    width: 250px;
+  }
+  .pepegym{
+    position: static;
+  }
+  .contacto{
+    max-width: 280px;
+    margin: 0;
+    justify-content: initial;
+  }
+  th{
+    padding: 10px 0;
+  }
+  th:first-child{
+    padding: 10px;
+  }
+  th:nth-child(3){
+    padding: 10px;
+  }
+  td{
+    padding: 20px 9px;
+  }
+  .tabla{
+    margin: 30px 0;
+  }
+  table{
+    box-shadow: none;
+  }
+  .logotipo{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+  .pepegym{
+    display: flex;
+    justify-content: center;
+  }
+  #titulo{
+    font-size: 30px;
+  }
+  .sexo{
+    margin-top: 10px;
+  }
+  h3{
+    font-size: 16px;
+  }
+  .formulario{
+    width: 100% !important;
+  }
+  .button{
+    display: block !important;
+  }
+  .col2{
+    align-items: stretch;
+  }
+  footer{
+    padding: 10%;
+  }
+  #titulo-footer{
+    position: absolute;
+    left: 4em;
+    top: 1.7em;
+  }
+  .menu{
+    background: rgba(9, 177, 22, 0.87);
+    position: fixed;
+    left: -110%;
+    top: 0;
+    z-index: 2;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    transition: .3s;
+  }
+}
+@media screen and (min-width: 1200px){
+  .contenedor{
+    width: 800px;
+    max-width: none;
+  }
+}
+@media screen and (min-height: 1200px){
+  td{
+    font-size: 24px;
+  }
+  .background-precios{
+    padding: 15% 20px;
+  }
+  #footer{
+    padding: 10% 0;
+  }
+}
+@media screen and (min-width: 768px){
+
 }

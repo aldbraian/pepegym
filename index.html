@@ -2,9 +2,12 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="theme-color" content="#01d801"/>
+    <link href="fuentes/style.css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Allerta" rel="stylesheet">
     <title>PepeGym - Sea solo feo</title>
     <link rel="stylesheet" href="css/pepegym.css">
+    <meta name="viewport" content="width=device-width, initial-scale= 1, user-scalable= no">
   </head>
   <body>
     <div class="background">
@@ -13,7 +16,8 @@
           <img src="images/logo.png" width="200px" alt="PepeGym logotipo"/>
         </figure>
         <span class="pepegym">PepeGym</span>
-        <nav class="menu">      <!-- menu -->
+        <span class="icon-menu" id="buttonone"></span>
+        <nav class="menu" id="menu">      <!-- menu -->
           <a href="index.html">Home   </a>
           <a href="#planes">Planes   </a>
           <a href="precios.html">Precios   </a>
@@ -31,7 +35,7 @@
       <h2>Nuestros Planes</h2>
       <article id="plan-a" class="plan der">
         <img src="images/plan1.png"/ id="plan1" class="derecha">
-        <div class="contenedor-plan-a">
+        <div class="contenedor-plan-a responsive">
           <h3 id="title-a">Pepe Inicial</h3>
           <ol>
             <li>Ideal para principiantes</li>
@@ -42,7 +46,7 @@
       </article>
       <article id="plan-b" class="plan izq">
         <img src="images/plan2.png"/ id="plan2" class="izquierda">
-        <div class="contenedor-plan-b">
+        <div class="contenedor-plan-b responsive">
           <h3 id="title-a">Pepe Intermedio</h3>
           <ol>
             <li>Rutinas Aceleradas</li>
@@ -53,7 +57,7 @@
       </article>
       <article id="plan-c" class="plan der">
         <img src="images/plan3.png"/ id="plan3" class="derecha">
-        <div class="contenedor-plan-c">
+        <div class="contenedor-plan-c responsive">
           <h3 id="title-a">Pepe Avanzado</h3>
           <ol>
             <li>Suplementos gratis cada mes</li>
@@ -64,7 +68,7 @@
       </article>
       <article id="plan-d" class="plan izq">
         <img src="images/plan4.png" id="plan4" class="izquierda"/>
-        <div class="contenedor-plan-d">
+        <div class="contenedor-plan-d responsive">
           <h3 id="title-a">Pepe Supremo</h3>
           <ol>
             <li>Bebidas y Snaks gratis</li>
@@ -120,5 +124,25 @@
         </div>
       </footer>
     </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js">
+    </script>
+    <script type="text/javascript">
+      var $burgerButton = document.getElementById('buttonone');
+      var $menu = document.getElementById('menu');
+      $burgerButton.addEventListener("touchstart", toggleMenu)
+      function toggleMenu(){
+        $menu.classList.toggle("active");
+      };
+      function showMenu(){
+        $menu.classList.add("active");
+      };
+      function hideMenu(){
+        $menu.classList.remove("active");
+      };
+      var $body = document.body;
+      var hammertime = new Hammer($body);
+      hammertime.on('swipeleft', hideMenu);
+      hammertime.on('swiperight', showMenu);
+    </script>
   </body>
 </html>
